@@ -69,8 +69,8 @@ Vagrant.configure("2") do |config|
      sudo apt-get install -y mongodb
      sudo service mongodb start
      sudo mkdir -p /data/masterdb
-     sudo mongod --dbpath /data/masterdb --replSet r1 --port 27017 --fork --logpath "1.log"
-     sudo mongo localhost:27017
+     sudo mongod --dbpath /data/masterdb --replSet r1 --port 27019 --fork --logpath "1.log"
+     sudo mongo localhost:27019
      sudo mongo < "/vagrant/data/backup.js"
   SHELL
 end
